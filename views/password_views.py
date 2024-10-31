@@ -2,12 +2,12 @@ import string, secrets
 import hashlib
 import base64
 from pathlib import Path
-#from cryptography.fernet import Fernet, InvalidToken
+from cryptography.fernet import Fernet, InvalidToken
 from typing import Union
 
 
 '''Em views/password_views.py crie a classe FernetHasher e o método get
-random string para gerar uma chave aleatóri'''
+random string para gerar uma chave aleatória'''
 
 class FernetHasher:
     RANDOM_STRING_CHARS = string.ascii_lowercase + string.ascii_uppercase
